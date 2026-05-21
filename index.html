@@ -10,16 +10,16 @@
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Van 3DGS WebGPU</title>
+    <title>Van RT-Splatting WebGPU</title>
   </head>
   <body>
     <main class="stage">
-      <canvas id="view" aria-label="Van 3D Gaussian splatting viewer"></canvas>
+      <canvas id="view" aria-label="Van RT-Splatting WebGPU viewer"></canvas>
       <section class="hud" aria-live="polite">
         <div class="brand">
           <span class="brand-mark"></span>
           <div>
-            <h1>Van 3DGS</h1>
+            <h1>Van RT-Splatting</h1>
             <p id="status">Loading</p>
           </div>
         </div>
@@ -29,6 +29,13 @@
               <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z" />
               <path d="M12 11v5" />
               <path d="M9.5 13.5 12 11l2.5 2.5" />
+            </svg>
+          </button>
+          <button id="sort" class="icon-button active" type="button" title="Depth sort" aria-label="Depth sort">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 3 8 4.5-8 4.5-8-4.5L12 3Z" />
+              <path d="m4 12 8 4.5 8-4.5" />
+              <path d="m4 16.5 8 4.5 8-4.5" />
             </svg>
           </button>
           <button id="orbit" class="icon-button active" type="button" title="Auto orbit" aria-label="Auto orbit">
